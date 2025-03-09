@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fff;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif, "Lilita One";
+}
+
+h1{
+  color: #E3000E;
+    font-family: "Lilita One", Sans-serif;
+    font-size: 116px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 0px #FFFFFF;
+    text-align: center;
+  width: 60%;
+}
+
+.bg-img {
+  background-image: url('/promo-11.jpg');  /* Ensure correct path */
+  background-size: cover;   /* Makes sure the image covers the entire div */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  min-height: 700px;
+  width: 100%;
+}
+.bg-img2{
+  background-image: url('/about-1.jpg');  /* Ensure correct path */
+  background-size: cover;   /* Makes sure the image covers the entire div */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  min-height: 700px;
+  width: 100%;
+}
+.bg-img3{
+  background-image: url('/banner-4.jpg');  /* Ensure correct path */
+  background-size: cover;   /* Makes sure the image covers the entire div */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  min-height: 600px;
+  width: 100%;
+}
+.about-img{
+  background-image: url('/about-page.jpg');  /* Ensure correct path */
+  background-size: cover;   /* Makes sure the image covers the entire div */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  min-height: 600px;
+  min-width: 100%;
+}
+.contact{
+  background-image: url('/slide-2.jpg');  /* Ensure correct path */
+  background-size: cover;   /* Makes sure the image covers the entire div */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  min-height: 600px;
+  min-width: 100%;
+}
+.gg{
+  width: 60%;
+}
+::placeholder{
+  color: #171717;
+}
+/* For screens 996px or smaller */
+@media only screen and (max-width: 996px) {
+  h1 {
+    font-size: 90px;
+    width: 80%;
+  }
+}
+
+/* For screens 550px or smaller */
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 50px;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 996px) {
+ .bp{
+  flex-wrap: wrap;
+ }
+}
