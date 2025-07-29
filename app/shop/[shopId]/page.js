@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import ProductsMenu from '@/app/components/ProductsMenu';
 import Explore from '@/app/components/Explore';
 import Delivery from '@/app/components/Delivery';
-import Shop from '../Shop';
+// import Shop from '../Shop';
 
 
 
@@ -14,7 +14,7 @@ export default function MenuIdPage() {
   return (
     <div>
 
-      <Shop/>
+      {/* <Shop/> */}
       {/* Render ProductsMenu if /menu/menu-1 */}
       {shopId === 'menu-1' &&
       <ProductsMenu />}

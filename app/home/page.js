@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import BigitBurger from '../components/BigitBurger'
 import BurgerElse from '../components/BurgerElse'
