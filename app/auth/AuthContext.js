@@ -17,12 +17,10 @@ export const AuthProvider = ({ children }) => {
   // Login function
   const login = async (email, password) => {
     const users = JSON.parse(localStorage.getItem("users")) || [];
-    console.log("Users in localStorage:", users); // Debugging
   
     const user = users.find(
       (u) => u.email === email.trim() && u.password === password.trim()
     );
-    console.log("User found:", user); // Debugging
   
     if (user) {
       setUser(user);
@@ -45,8 +43,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem("currentUser", JSON.stringify(newUser)); // Set current user
     setUser(newUser); // Update state
     return true;
-    console.log("Users in localStorage:", users);
-console.log("User attempting to log in:", { email, password });
+    
 
   };
 
